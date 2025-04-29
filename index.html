@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hop.SCIMMA</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/hop-favicon-3.png" rel="icon">
+  <link href="assets/img/hop-apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.1.1
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span>&nbsp;Hop.SCIMMA</span><span style="color: red"></span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">Learn More</a></li>
+          <li><a class="nav-link scrollto" href="#quickstart">Get It</a></li>
+      <!--   <li><a class="nav-link scrollto" href="#tryit">Try It</a></li> -->
+
+          <li><a class="getstarted scrollto" href="https://my.hop.scimma.org/auth/authenticate/?next=/hopauth/">Sign In</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Predictions of the Legacy Survey of Space and Time's  Solar System Discoveries</h1>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+     	 <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
+	    <img src="assets/img/LSST_minor_planets.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>What is the Legacy Survey of Space and Time?</h3>
+              <h2>Event streaming service for MMA</h2>
+              <p>
+                Hop.SCIMMA is a hub providing real-time streams of candidate discoveries from MMA experiments.
+              </p><p>
+                Hop.SCIMMA allows observatories to publish streams of candidates and discoveries, and
+                scientists, brokers, and TOMs to subscribe to these streams. Hop.SCIMMA is powered by <a href="https://scimma.org/hopskotch.html">Hopskotch</a>.
+              </p>
+              <div class="text-center text-lg-start">
+          <a href="https://youtu.be/nVDKnowQDzQ" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/rubin_obs.jpg" class="img-fluid" alt=""  style="box-shadow: 0 0 15px 10px #141424;">
+           </div>
+          <div class="content">  <p> Image Credit: Rubin Observatory/NSF/AURA/A. Pizarro D.
+              </p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="quickstart" class="about">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Quick Start</p>
+        </header>
+
+        <div class="row gx-0">
+
+          <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <p>
+              Hop.SCIMMA provides access to streams of events from a variety of MMA
+              facilities, typically transmitted in JSON or Avro formats. These events will generally be consumed
+              programmatically, using libraries compatible with Hopskotch's Apache Kafka-based backend.
+              <br>
+              <br>
+              The recommended tool to connect to Hop.SCIMMA is <a href="http://hop-client.readthedocs.io/">hop-client</a>, a Python 
+              library and command-line utility. The following code snippet shows how to install hop-client,
+              obtain a Hop.SCIMMA access token and authenticate, and finally how to connect and receive messages:
+              <pre style="font-family: monospace; font-size: 16px; background-color: #eeeeff; padding: 10px; margin-top: -1em;">
+<i># install the client</i>
+<b>$ pip install hop-client</b>
+
+<i># create an account at https://my.hop.scimma.org</i>
+<i># login and create credentials at https://my.hop.scimma.org</i>
+
+<i># enter the credentials into the hop authentication prompts:</i>
+<b>$ hop auth add</b>
+
+<i># receive test messages from the heartbeat stream (approximately one per second)</i>
+<b>$ hop subscribe kafka://kafka.scimma.org/sys.heartbeat</b>
+
+<i># receive new messages from GCN (will take several minutes for a new message to arrive)</i>
+<b>$ hop subscribe kafka://kafka.scimma.org/gcn.circular</b>
+
+<i># read all stored messages from GCN </i>
+<b>$ hop subscribe -e -s EARLIEST kafka://kafka.scimma.org/gcn.circular</b>
+              </pre>
+              An in-depth setup tutorial is available on the <a href="https://github.com/scimma/hop-client/wiki/Tutorial:-using-hop-client-with-the-SCiMMA-Hopskotch-server">hop-client GitHub wiki</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Try It Section ======= -->
+    <!-- ======= Try It Section -- commented out as Jupyter is not currently supported
+    <section id="tryit" class="about">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Try it in our notebook environment</p>
+        </header>
+
+        <div class="row gx-0">
+
+          <div class="col-lg-8 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/jupyter-screenshot.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>SCIMMA Analysis Platform</h3>
+              <h2>Hosted Jupyter for MMA</h2>
+              <p>
+                SCIMMA's analysis platform provides a full-featured remote
+                Jupyter environment, with all the required Hopskotch
+                packages pre-installed.
+              </p><p>
+                Log in and run some of the included demo notebooks to give
+                Hopskotch a try.
+              </p>
+               <!-- <div class="text-center text-lg-start">
+                <a href="https://jupyter.scimma.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fscimma%2Ftutorials&urlpath=tree%2Ftutorials%2Fevents%2F2021-lsst-brokers-workshop%2Fscimma-iam-tutorial.ipynb&branch=master" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Access Jupyter</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div> -->
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section><!-- End Try It Section 
+    Try It Section -- commented out as Jupyter is not currently supported -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>&nbsp;Hop.SCIMMA</span>
+            </a>
+            <p>
+               This service is supported by National Science Foundation grants
+               OAC-1841625, OAC-1934752.  Any opinions, findings, conclusions
+               or recommendations expressed in this material are those of the
+               developers and do not necessarily reflect the views of the
+               National Science Foundation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

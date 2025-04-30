@@ -1069,7 +1069,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #x;
+  color: #444444;
   border-color: #4154f1;
 }
 

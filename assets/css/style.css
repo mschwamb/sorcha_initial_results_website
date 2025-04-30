@@ -432,7 +432,7 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #0fea72;
+  color: #0FEA72;
 }
 
 .hero h2 {
@@ -1069,7 +1069,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #4154f1;
+  color: #x;
   border-color: #4154f1;
 }
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>LSST Solar System PredictionsA</title>
+  <title>LSST Solar System Predictions</title>
   <meta content="" name="description">
 
   <meta content="" name="keywords">
@@ -98,6 +98,8 @@
                 Hop.SCIMMA allows observatories to publish streams of candidates and discoveries, and
                 scientists, brokers, and TOMs to subscribe to these streams. Hop.SCIMMA is powered by <a href="https://scimma.org/hopskotch.html">Hopskotch</a>.
               </p>
+              
+             <p> Image Credit: Rubin Observatory/NSF/AURA/A. Pizarro D. </p>
               <div class="text-center text-lg-start">
           <a href="https://youtu.be/nVDKnowQDzQ" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Learn More</span>
@@ -110,132 +112,276 @@
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
             <img src="assets/img/rubin_obs.jpg" class="img-fluid" alt=""  style="box-shadow: 0 0 15px 10px #141424;">
            </div>
-          <div class="content">  <p> Image Credit: Rubin Observatory/NSF/AURA/A. Pizarro D.
-              </p>
 
-          </div>
+
 
         </div>
       </div>
+    </section>
+    
+    
+      <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="sorcha" class="about">
 
-    </section><!-- End About Section -->
+          <div class="container" data-aos="fade-up">
+            <div class="row gx-0">
 
-    <!-- ======= About Section ======= -->
-    <section id="quickstart" class="about">
+              <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="content">
+                  <h3>Sorcha </h3>
+                  <h2>Simulating what the LSST should find</h2>
+                  <p>
+                    Hop.SCIMMA is a hub providing real-time streams of candidate discoveries from MMA experiments.
+                  </p><p>
+                    Hop.SCIMMA allows observatories to publish streams of candidates and discoveries, and
+                    scientists, brokers, and TOMs to subscribe to these streams. Hop.SCIMMA is powered by <a href="https://scimma.org/hopskotch.html">Hopskotch</a>.
+                  </p>
+                  
+           
+                </div>
+              </div>
 
-      <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <p>Quick Start</p>
-        </header>
+     	 <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
+	    <img src="assets/img/logo.png" class="img-fluid" alt="">
+	     </div>
 
-        <div class="row gx-0">
 
-          <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <p>
-              Hop.SCIMMA provides access to streams of events from a variety of MMA
-              facilities, typically transmitted in JSON or Avro formats. These events will generally be consumed
-              programmatically, using libraries compatible with Hopskotch's Apache Kafka-based backend.
-              <br>
-              <br>
-              The recommended tool to connect to Hop.SCIMMA is <a href="http://hop-client.readthedocs.io/">hop-client</a>, a Python 
-              library and command-line utility. The following code snippet shows how to install hop-client,
-              obtain a Hop.SCIMMA access token and authenticate, and finally how to connect and receive messages:
-              <pre style="font-family: monospace; font-size: 16px; background-color: #eeeeff; padding: 10px; margin-top: -1em;">
-<i># install the client</i>
-<b>$ pip install hop-client</b>
 
-<i># create an account at https://my.hop.scimma.org</i>
-<i># login and create credentials at https://my.hop.scimma.org</i>
 
-<i># enter the credentials into the hop authentication prompts:</i>
-<b>$ hop auth add</b>
-
-<i># receive test messages from the heartbeat stream (approximately one per second)</i>
-<b>$ hop subscribe kafka://kafka.scimma.org/sys.heartbeat</b>
-
-<i># receive new messages from GCN (will take several minutes for a new message to arrive)</i>
-<b>$ hop subscribe kafka://kafka.scimma.org/gcn.circular</b>
-
-<i># read all stored messages from GCN </i>
-<b>$ hop subscribe -e -s EARLIEST kafka://kafka.scimma.org/gcn.circular</b>
-              </pre>
-              An in-depth setup tutorial is available on the <a href="https://github.com/scimma/hop-client/wiki/Tutorial:-using-hop-client-with-the-SCiMMA-Hopskotch-server">hop-client GitHub wiki</a>.
-              </p>
             </div>
           </div>
+        </section>
+        
+        
+         <!-- ======= About Section ======= -->
+         <section id="results" class="about">
+
+           <div class="container" data-aos="fade-up">
+
+             <div class="row gx-0">
+
+               <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+               
+                 <div class="content">
+                 
+                  <h3>Results </h3>
+                  <h2>What should the LSST discover and when?</h2>
+                   <p>
+                   Hop.SCIMMA provides access to streams of events from a variety of MMA
+                   facilities, typically transmitted in JSON or Avro formats. These events will generally be consumed
+                   programmatically, using libraries compatible with Hopskotch's Apache Kafka-based backend.
+                   <br>
+                   <br>
+                   The recommended tool to connect to Hop.SCIMMA is <a href="http://hop-client.readthedocs.io/">hop-client</a>, a Python 
+                   library and command-line utility. The following code snippet shows how to install hop-client,
+                   obtain a Hop.SCIMMA access token and authenticate, and finally how to connect and receive messages:
+                   <pre style="font-family: monospace; font-size: 16px; background-color: #eeeeff; padding: 10px; margin-top: -1em;">
+     <i># install the client</i>
+     <b>$ pip install hop-client</b>
+
+     <i># create an account at https://my.hop.scimma.org</i>
+     <i># login and create credentials at https://my.hop.scimma.org</i>
+
+     <i># enter the credentials into the hop authentication prompts:</i>
+     <b>$ hop auth add</b>
+
+     <i># receive test messages from the heartbeat stream (approximately one per second)</i>
+     <b>$ hop subscribe kafka://kafka.scimma.org/sys.heartbeat</b>
+
+     <i># receive new messages from GCN (will take several minutes for a new message to arrive)</i>
+     <b>$ hop subscribe kafka://kafka.scimma.org/gcn.circular</b>
+
+     <i># read all stored messages from GCN </i>
+     <b>$ hop subscribe -e -s EARLIEST kafka://kafka.scimma.org/gcn.circular</b>
+                   </pre>
+                   An in-depth setup tutorial is available on the <a href="https://github.com/scimma/hop-client/wiki/Tutorial:-using-hop-client-with-the-SCiMMA-Hopskotch-server">hop-client GitHub wiki</a>.
+                   </p>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+         </section><!-- End About Section -->
+      
+  <section id="jake" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+       
+      <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="blog-author d-flex align-items-center">
+                  <img src="assets/img/blog/blog-author.jpg" class="rounded-circle float-left" alt="">
+                  <div>
+                    <h4>Jake Kurlander</h4>
+                    <p>
+                      Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                    </p>
+                  </div>
+                </div><!-- End blog author bio -->
         </div>
-      </div>
-
-    </section><!-- End About Section -->
-
-    <!-- ======= Try It Section ======= -->
-    <!-- ======= Try It Section -- commented out as Jupyter is not currently supported
-    <section id="tryit" class="about">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <p>Try it in our notebook environment</p>
-        </header>
-
-        <div class="row gx-0">
-
-          <div class="col-lg-8 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/jupyter-screenshot.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-4 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>SCIMMA Analysis Platform</h3>
-              <h2>Hosted Jupyter for MMA</h2>
-              <p>
-                SCIMMA's analysis platform provides a full-featured remote
-                Jupyter environment, with all the required Hopskotch
-                packages pre-installed.
-              </p><p>
-                Log in and run some of the included demo notebooks to give
-                Hopskotch a try.
-              </p>
-               <!-- <div class="text-center text-lg-start">
-                <a href="https://jupyter.scimma.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fscimma%2Ftutorials&urlpath=tree%2Ftutorials%2Fevents%2F2021-lsst-brokers-workshop%2Fscimma-iam-tutorial.ipynb&branch=master" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Access Jupyter</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div> -->
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-    </section><!-- End Try It Section 
-    Try It Section -- commented out as Jupyter is not currently supported -->
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-12 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>&nbsp;Hop.SCIMMA</span>
-            </a>
-            <p>
-               This service is supported by National Science Foundation grants
-               OAC-1841625, OAC-1934752.  Any opinions, findings, conclusions
-               or recommendations expressed in this material are those of the
-               developers and do not necessarily reflect the views of the
-               National Science Foundation.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </footer><!-- End Footer -->
+ </div>
+ 
+     </section>
+     
+      
+  <section id="Joe" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+       
+      <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="blog-author d-flex align-items-center">
+                  <img src="assets/img/blog/blog-author.jpg" class="rounded-circle float-left" alt="">
+                  <div>
+                    <h4>Joe Murtagh</h4>
+                    <div class="social-links">
+                      <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
+                      <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                      <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                    </div>
+                    <p>
+                      Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                    </p>
+                  </div>
+                </div><!-- End blog author bio -->
+        </div>
+    </div>
+ </div>
+ 
+     </section>
+  
+      <!-- ======= About Section ======= -->
+      <section id="papers" class="about"> 
+
+        <div class="container" data-aos="fade-up">
+          <div class="row gx-0">
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="content">
+                <h3>Publications</h3>
+                <h2>The Science Papers Behind the Results</h2>
+      
+                <p>
+                <ul>
+                <li> <b> Predictions of the LSST Solar System Yield: </b> - Kurlander et al (2025) </li>
+                <li> <b> Predictions of the LSST Solar System Yield: Discovery Rates and Characterizations of Centaurs </b> - Murtaugh et al (2025)</li>
+                <li> <b> Sorcha: A Solar System Survey Simulator for the Legacy Survey of Space and Time </b> - Merritt et al (2025) </li>
+                <li> <b> Sorcha: Optimized Solar System Ephemeris Generation </b> -  Holman et al (2025) </li>
+                 </ul>
+                </p>
+           
+              </div>
+            </div>
+
+            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+              <img src="assets/img/centaur_results.png" class="img-fluid" alt=""  style="box-shadow: 0 0 15px 10px #141424;">
+             </div>
+          
+
+          </div>
+        </div>
+
+    </section>
+    
+    
+        
+        
+        <section id="Meg" class="blog">
+          <div class="container" data-aos="fade-up">
+
+            <div class="row">
+
+             
+            <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                      <div class="blog-author d-flex align-items-center">
+                        <img src="assets/img//sorcha_team/MES.jpg" class="rounded-circle float-left" alt="">
+                        <div>
+                          <h4>Meg Schwamb</h4>
+                          <div class="social-links">
+                            <a href="https://twitters.com/megschwamb#"><i class="bi bi-twitter"></i></a>
+                            <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                            <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                          </div>
+                          <p>
+                            Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                          </p>
+                        </div>
+                      </div><!-- End blog author bio -->
+              </div>
+          </div>
+       </div>
+
+
+      <!-- ======= About Section ======= -->
+      <section id="team" class="about">
+
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gx-0">
+
+            <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            
+              <div class="content">
+              
+               <h3>Team </h3>
+               <h2>Core Sorcha Team Members</h2>
+               
+                  <img src="assets/img//sorcha_team/core_team.png" class="img-fluid" alt="" >
+            
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section><!-- End About Section -->
+   
+   
+      <!-- ======= About Section ======= -->
+      <section id="funders" class="about">
+
+        <div class="container" data-aos="fade-up">
+
+    
+
+          <div class="row gx-0">
+
+            <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="content">
+              <h3> Acknowledgements </h3>
+              <h2>Funders</h2>
+
+                <p>
+              
+                <p>  Sorcha development was supported part by:</p>
+            	<ul>
+                <li><p>Science and Technology Facilities Council (STFC) grants ST/P000304/1, ST/V000691/1, ST/X001253/1, and ST/V506990/1</p></li>
+                <li><p>Horizon 2020 Marie Skłodowska-Curie Postdoctoral Fellowship</p></li>
+                <li><p>Preparing for Astrophysics with LSST Program, funded by the Heising Simons Foundation through grant 2021-2975, and administered by Las Cumbres Observatory</p></li>
+                <li><p>LSST Discovery Alliance LINCC Frameworks Incubator grant [2023-SFF-LFI-01-Schwamb]. Support was provided by Schmidt Sciences.</p></li>
+                <li><p>University of Washington College of Arts and Sciences, Department of Astronomy, and the DiRAC (Data-intensive Research in Astrophysics and Cosmology) Institute. The DiRAC Institute is supported through generous gifts from the Charles and Lisa Simonyi Fund for Arts and Sciences and the Washington Research Foundation</p></li>
+                <li><p>Washington Research Foundation Data Science Term Chair fund and the University of Washington Provost's Initiative in Data-Intensive Discovery.</p></li>
+                <li><p>Department for the Economy (DfE) Northern Ireland postgraduate studentship scheme</p></li>
+                <li><p>National Science Foundation through the following awards: Collaborative Research: SWIFT-SAT: Minimizing Science Impact on LSST and Observatories Worldwide through Accurate Predictions of Satellite Position and Optical Brightness NSF Award Number: 2332736 and Collaborative Research: Rubin Rocks: Enabling near-Earth asteroid science with LSST NSF Award Number: 2307570</p></li>
+                <li><p>Travel funding from the STFC for UK participation in LSST through STFC grant ST/S006206/1</p></li>
+                </ul>
+                <p>Several functions within Sorcha were adapted from code originally developed for  <a href="https://github.com/lsst/rubin_sim">rubin_sim</a>, We thank the Vera C. Rubin Observatory Data Management Team and Scheduler Team for making their software open-source. Development of rubin_sims supported in part by the National Science 
+                Foundation through Cooperative Agreement AST-1258333 and Cooperative Support Agreement AST1836783 managed by the Association of Universities for Research in Astronomy (AURA), and the Department of Energy under Contract No. DE-AC02-76SF00515 with the SLAC National Accelerator Laboratory managed by Stanford University.
+                </p>
+              
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+   
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

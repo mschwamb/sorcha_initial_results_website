@@ -529,7 +529,7 @@ section {
 .about h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #012970;
+  color: #0fea72;
 }
 
 .about p {
@@ -1871,6 +1871,7 @@ section {
   padding: 20px;
   margin-bottom: 30px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #f6f9ff;
 }
 
 .blog .blog-author img {
@@ -1883,7 +1884,7 @@ section {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: #012970;
+  color: #0fea72;
 }
 
 .blog .blog-author .social-links {

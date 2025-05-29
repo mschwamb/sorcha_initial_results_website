@@ -104,6 +104,13 @@
                 The LSST will generate the largest catalog of known Solar System bodies, discovering and monitoring huge numbers of small Solar System objects over the next ten-years. 
                 
             </p>
+            
+             <p>
+               
+             The Rubin Observatory is in the final stages of construction and commissioning. The LSST is expected to begin later this year when Rubin Observatory begins science operations.  
+          
+                   
+            </p>
           
              <p> Image Credit: Rubin Observatory/NSF/AURA/A. Pizarro D. </p>
               <div class="text-center text-lg-start">
@@ -209,22 +216,26 @@
                 <div class="content">
                   <h3>Sorcha </h3>
                   <h2>Simulating what the LSST should find</h2>
-                  <p>
-                    
-                  The Rubin Observatory is in the final stages of construction and commissioning. The LSST is expected to begin later this year when Rubin Observatory begins science operations.  Our team set out to accurately predict how many new Solar System objects would be discovered during the LSST, when these small bodies shold be found, and how many observations each one would receive throughout the duration of the survey. A detailed understanding of the numbers and kinds of Solar System objects that will be discovered at different points in the 10-year survey can help astronomers get ready for the LSST and better plan follow-up observations with other facilities. </b>
-               
-                        
-                 </p><p>
+                 <p>
             
-                To answer these questions, our team spent the last five years building Sorcha, a software designed to simulate the LSST and figure out which  Solar System survey simulator for the LSST.
+                Our team set out to accurately predict how many new Solar System objects would be discovered during the LSST, when these small bodies shold be found, and how many observations each one would receive throughout the duration of the survey. A detailed understanding of the numbers and kinds of Solar System objects that will be discovered at different points in the 10-year survey can help astronomers get ready for the LSST and better plan follow-up observations with other facilities. </b>
                 
-                
-                 For the past several years, we have been developing an open-source community LSST Solar System Survey Simulator that takes a model Solar System small body population and uses the pointing history, observation metadata, and expected Rubin Observatory detection efficiency to output what LSST should find so that the numbers and types of simulated detections can be directly compared to the number and types of real small bodies found in the actual LSST survey.
+                </p>
+                <p>
+                We have spent the last five years building Sorcha, a powerful software tool that simulates the LSST. 
                  
-                 
-                Sorcha is open-source, meaning it is freely accessible to download and use. You can learn more about Sorcha <a href="https://sorcha.readthedocs.io">here</a>. 
+                 Sorcha  figures out which of the objects in an input model (representing a population of Solar System planetoids  with specified orbits, sizes, surface colors)  should be "found"  by the survey. Sorcha calculates the locations of the model orbits on-sky and figures out which of the model objects land within the survey images and would be bright enough to be detected by the Rubin Observatory's data analysis pipelines and Solar System moving object search pipeline. Sorcha uses a database of where the Rubin Observatory searched on the sky and the weather conditions during the LSST (or <a href="https://survey-strategy.lsst.io/baseline/index.html">currently a simulation </a> of where the survey pointed provided by Rubin Observatory), the properties of the LSST Camera, and properties of Rubin Observatory's software pipelines to figures out which of the input model objects should be found the survey. 
 
+                 </p>
+                 <p>
+                Sorcha is built to handle the big scale of the LSST data, allowing astronomers to crucially compare model Solar Systems to the one we live in. Thanks to Sorcha, astronomers can Sorcha can predict what the "found" by the LSST should have found if the model represents the Solar System and compare the results to what was actually found by the survey  In the future these simulated "surveys" can be compared to the real LSST. Using this technique
+astronomers can adjust the input model parameters/distribution of model population's properties until the discoveries in the simulated version of the LSST mates matches the real LSST discoveries. This technique is very powerful, enabling estimates of the total number of objects, distribution
+of orbits, sizes , rotational variability, and surface properties for any of the small body population within the Solar System.
                  
+                 
+                 <p> 
+                Sorcha is freely accessible to download and use. You can learn more about Sorcha <a href="https://sorcha.readthedocs.io">here</a>. 
+
                  
                 
                   </p>
@@ -548,11 +559,19 @@
             
               <div class="content">
               
-               <h3>Team </h3>
+               <h3>Team and Partners </h3>
+               
+         
                <h2>Core Sorcha Team Members</h2>
                
                   <img src="assets/img//sorcha_team/core_team.png" class="img-fluid" alt="" >
             
+            
+                      <p> This effort is a collaboration between Queen's University Belfast, the University of Washington's DiRAC Institute, the University of Illinois Urbana-Champaign, the Center for Astrophysics | Harvard & Smithsonian, and LINCC Frameworks (through the LINCC Frameworks Incubator Program). 
+                      </p>
+                
+                                  <img src="assets/img/all_logos.png" class="img-fluid" alt="" >
+
               </div>
             </div>
           </div>
@@ -572,7 +591,7 @@
                 <h2>LINCC Frameworks Incubators </h2>
                 <p>
                   
-                 The development of the Sorcha survey simulator was made possible thanks to the LSST Discovery Alliance's  LINCC Frameworks Incubator program, supported by  Schmidt Sciences. The Incubator program pairs software engineers with research teams for three months to develop software tools ready to handle the upcoming scale of the LSST data.  Sorcha was selected as one of two inagural incubators in 2023.  
+                 The development of the Sorcha survey simulator was made possible thanks to the LSST Discovery Alliance's  LINCC Frameworks Incubator program, supported by  Schmidt Sciences. The Incubator program pairs software engineers with research teams to develop software tools ready to handle the upcoming scale of the LSST data.  Sorcha was selected as one of two inagural incubators in 2023.  
                       
                       
                </p>
